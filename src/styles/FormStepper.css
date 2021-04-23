@@ -1,0 +1,166 @@
+.form_wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.form_backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.form_box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 30px;
+  max-height: 100%;
+  overflow-y: auto;
+  animation-name: zoomIn;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.stepper_card {
+  padding: 0px !important;
+}
+
+.form_card form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_one_card form h1 {
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+.form_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steppr_input {
+  font-size: 10px;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  width: 360px;
+}
+
+.form_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radio_control {
+  flex-direction: row !important;
+  align-items: center;
+}
+
+.radio_legend {
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.00938em;
+  margin-right: 20px;
+}
+
+.stepper_select {
+  width: 100%;
+  margin-bottom: 10px !important;
+}
+
+.main_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stepper_advanced_bttn {
+  width: 100px;
+  height: 35px;
+  margin-left: 10px !important;
+  font-weight: bold !important;
+  border-radius: 5px !important;
+}
+
+.stepper_form_footer {
+  display: flex;
+  /* margin-top: 10px; */
+}
+
+.stepper_description {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  width: 400px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.stepper_validate,
+.stepper_cancel,
+.stepper_delete {
+  width: 100px;
+  height: 40px;
+  margin: 3px 0 !important;
+  font-weight: bold !important;
+  border-radius: 5px !important;
+}
+
+.stepper_validate,
+.alert {
+  color: white !important;
+  background-color: #219ebc !important;
+}
+
+.stepper_cancel {
+  color: white !important;
+  background-color: #ffb803 !important;
+}
+
+.alert {
+  margin-top: 150px !important;
+  color: white !important;
+  background-color: #219ebc !important;
+}
+
+.alert svg {
+  color: white;
+}
+
+.MuiStepConnector-vertical {
+  padding: 0px 0px;
+}
+.MuiStepConnector-lineVertical {
+  min-height: 15px !important;
+}
